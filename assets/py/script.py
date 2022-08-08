@@ -63,7 +63,7 @@ def choresChoice():
     if again == "yes":
         choresChoice()
     else:
-        print("Goodbye mrs. lazy")
+        print("Goodbye")
 
 
 choresChoice()
