@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Condensed&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>CHORE-ganizer</title>
   </head>
@@ -15,14 +24,30 @@
     <section>
       <!-- Box where user randomly selects chore -->
       <div class="randomize-box">
-        <button>Choose a Random Chore</button>
+        <button class="button" id="choose">Choose a Random Chore</button>
         <div id="selected-chore">Chosen Chore</div>
-        <button id="completed">I'm Done!</button>
+        <button class="button" id="completed">I'm Done!</button>
       </div>
       <!-- Box where user creates new chores -->
       <div class="create-new">
         <h2>Create a New Chore Below:</h2>
-        <form action="type"></form>
+        <form action="type">
+          <label for="chore-name">Name:</label>
+          <input id="chore-name" type="text" />
+          <label for="room-select">Room:</label>
+          <select name="Room" id="room-select">
+            <option value="Living Room">Living Room</option>
+            <option value="Bedroom">Bedroom</option>
+            <option value="Bathroom">Bathroom</option>
+            <option value="Other">Other</option>
+          </select>
+          <label for="responsible">Responsible:</label>
+          <select name="Responsible" id="responsible">
+            <option value="Nick">Nick</option>
+            <option value="Michaela">Michaela</option>
+          </select>
+          <input class="button" id="submit" type="submit" />
+        </form>
       </div>
     </section>
     <!-- Lower section of page -->

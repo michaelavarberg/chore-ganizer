@@ -70,4 +70,10 @@ choresChoice()
 
 
 
-
+#TO DO:
+# connect python to an html input element
+# make new elements in html based on user input
+# make user inputs strings in local storage for one chore
+# change this so that it stores a JSON object
+# add ability to store multiple chores
+# add edit function

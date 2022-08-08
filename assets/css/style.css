@@ -1,3 +1,81 @@
+:root {
+  --light: lightblue;
+  --medium: rgb(103, 153, 218);
+  --dark: darkblue;
+}
 * {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  /* font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Condensed", sans-serif; */
+  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+section,
+section div,
+form,
+.randomize-box,
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  text-align: center;
+  background-color: var(--medium);
+  padding: 30px;
+}
+
+section {
+  background-color: var(--light);
+  justify-content: space-evenly;
+  margin: 1%;
+}
+
+form,
+.randomize-box,
+.create-new,
+.card {
+  flex-direction: column;
+  padding: 35px;
+}
+
+form {
+  font-size: 120%;
+}
+
+.randomize-box,
+.create-new {
+  background-color: var(--medium);
+  width: 33%;
+}
+
+.button {
+  margin: 2px;
+  background-color: var(--dark);
+  color: white;
+  box-shadow: 2px 2px 5px black;
+}
+
+#choose {
+  font-size: 200%;
+  padding: 15px;
+}
+
+#completed,
+#submit {
+  font-size: 25px;
+  width: 30%;
+  padding: 5px;
+  align-items: baseline;
+  margin: 40px;
+}
+
+#selected-chore {
+  margin: 40px;
 }
