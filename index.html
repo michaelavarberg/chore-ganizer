@@ -8,6 +8,33 @@
     <title>CHORE-ganizer</title>
   </head>
   <body>
+    <header>
+      <h1>Welcome to CHORE-ganizer</h1>
+    </header>
+    <!-- Top section of page -->
+    <section>
+      <!-- Box where user randomly selects chore -->
+      <div class="randomize-box">
+        <button>Choose a Random Chore</button>
+        <div id="selected-chore">Chosen Chore</div>
+        <button id="completed">I'm Done!</button>
+      </div>
+      <!-- Box where user creates new chores -->
+      <div class="create-new">
+        <h2>Create a New Chore Below:</h2>
+        <form action="type"></form>
+      </div>
+    </section>
+    <!-- Lower section of page -->
+    <section>
+      <!-- Cards containing new chores created -->
+      <div class="card">
+        <h4 id="description">Chore Info</h4>
+        <button id="edit">Edit</button>
+        <button id="delete">Delete</button>
+      </div>
+    </section>
+    <footer></footer>
     <script src="./assets/py/script.py"></script>
   </body>
 </html>
